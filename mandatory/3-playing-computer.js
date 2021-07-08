@@ -15,20 +15,34 @@
   7. What is the value of the "a" outer variable when "f1" is called for the first time?
 */
 
+/*
+1. there is an error , variable b not declear , so we connot print the result of b 
+2. done.
+3. 2  6 li;e this 
+4. 3 times
+5. 2 times 
+6. a = 6
+7. a = 7
+*/
+
+
+
+
 let x = 2;
 let a = 6;
+let b ;
 
-const f1 = function (a, b) {
+let f1 = function (a, b) {
   return a + b;
 };
 
-const f2 = function (a, b) {
+let f2 = function (a, b) {
   return a + b + x;
 };
 
 console.log(x);
 console.log(a);
-console.log(b);
+
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
